@@ -4,7 +4,9 @@ const path = require("path");
 module.exports = {
   name: "github-issue-vote",
   mode: "production",
-  entry: "./src/index.ts",
+  entry: {
+    index: path.resolve("./src/index.ts"),
+  },
   resolve: {
     extensions: [".ts", ".tsx", ".js"],
   },

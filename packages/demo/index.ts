@@ -1,1 +1,3 @@
-console.log(33);
+import a from "github-issue-vote";
+
+console.log(a);

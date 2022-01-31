@@ -5,6 +5,9 @@
     "dev": "webpack serve",
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "github-issue-vote": "workspace:*"
+  },
   "devDependencies": {
     "@swc/core": "^1.2.135",
     "html-webpack-plugin": "^5.5.0",

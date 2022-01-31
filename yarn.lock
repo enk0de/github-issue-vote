@@ -1285,6 +1285,7 @@ __metadata:
   resolution: "demo@workspace:packages/demo"
   dependencies:
     "@swc/core": ^1.2.135
+    github-issue-vote: "workspace:*"
     html-webpack-plugin: ^5.5.0
     swc-loader: ^0.1.15
     typescript: ^4.5.5
@@ -1724,6 +1725,14 @@ __metadata:
   languageName: node
   linkType: hard
 
+"frame@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "frame@workspace:."
+  dependencies:
+    typescript: ^4.5.5
+  languageName: unknown
+  linkType: soft
+
 "fresh@npm:0.5.2":
   version: 0.5.2
   resolution: "fresh@npm:0.5.2"
@@ -1815,9 +1824,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"github-issue-vote@workspace:.":
+"github-issue-vote@workspace:*, github-issue-vote@workspace:packages/library":
   version: 0.0.0-use.local
-  resolution: "github-issue-vote@workspace:."
+  resolution: "github-issue-vote@workspace:packages/library"
+  dependencies:
+    "@swc/core": ^1.2.135
+    html-webpack-plugin: ^5.5.0
+    swc-loader: ^0.1.15
+    typescript: ^4.5.5
+    webpack: ^5.67.0
+    webpack-cli: ^4.9.2
+    webpack-dev-server: ^4.7.3
   languageName: unknown
   linkType: soft
 
@@ -2418,20 +2435,6 @@ __metadata:
   checksum: 3ab01e7b1d440b22fe4c31f23d8d38b4d9b91d9f291df683476576493d5dfd2e03848a8b05813dd0c3f0e835bc63f433007ddeceb71f05cb25c45ae1b19c6d3b
   languageName: node
   linkType: hard
-
-"library@workspace:packages/library":
-  version: 0.0.0-use.local
-  resolution: "library@workspace:packages/library"
-  dependencies:
-    "@swc/core": ^1.2.135
-    html-webpack-plugin: ^5.5.0
-    swc-loader: ^0.1.15
-    typescript: ^4.5.5
-    webpack: ^5.67.0
-    webpack-cli: ^4.9.2
-    webpack-dev-server: ^4.7.3
-  languageName: unknown
-  linkType: soft
 
 "loader-runner@npm:^4.2.0":
   version: 4.2.0
