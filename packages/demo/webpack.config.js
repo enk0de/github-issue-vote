@@ -17,7 +17,15 @@ module.exports = {
     publicPath: "auto",
   },
   module: {
-    rules: [{ test: /\.ts?$/, loader: "ts-loader" }],
+    rules: [
+      {
+        test: /\.(m?js|ts)$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: "swc-loader",
+        },
+      },
+    ],
   },
   plugins: [new HtmlWebpackPlugin()],
   devtool: "source-map",
