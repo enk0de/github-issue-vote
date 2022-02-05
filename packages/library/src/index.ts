@@ -8,7 +8,7 @@ interface VoteData {
 }
 
 export default function createVote({ issueId, title }: VoteData) {
-  console.log(`
+  console.info(`
     github-issue-vote
     created vote instance
     ${JSON.stringify({ issueId, title })}
@@ -17,12 +17,14 @@ export default function createVote({ issueId, title }: VoteData) {
   const containerCss = css({
     display: "flex",
     flexDirection: "column",
+    alignItems: "center",
     gap: "10px",
     padding: "10px",
+    borderRadius: "10px",
   });
   containerEl.className = containerCss();
 
-  const titleEl = createText({ text: title });
+  const titleEl = createText({ text: title, css: { padding: "5px 0" } });
 
   const buttonContainerEl = document.createElement("div");
   const buttonContainerCss = css({
@@ -36,6 +38,9 @@ export default function createVote({ issueId, title }: VoteData) {
 
   buttonContainerEl.appendChild(agreeButtonEl);
   buttonContainerEl.appendChild(disagreeButtonEl);
+
+  containerEl.appendChild(titleEl);
+  containerEl.appendChild(buttonContainerEl);
 
   return containerEl;
 }
