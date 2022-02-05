@@ -17,6 +17,8 @@ export default function createText({
       lineHeight: "17px",
       textAlign: "center",
       color: "#8F90A6",
+      margin: 0,
+      padding: 0,
     },
     extraCss
   );
