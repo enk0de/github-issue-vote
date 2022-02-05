@@ -1,22 +1,32 @@
 {
-  "name": "github-issue-vote",
-  "packageManager": "yarn@3.1.1",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "webpack && tsc --build --verbose",
-    "typecheck": "tsc --noEmit"
-  },
-  "devDependencies": {
-    "@swc/core": "^1.2.135",
-    "html-webpack-plugin": "^5.5.0",
-    "swc-loader": "^0.1.15",
-    "typescript": "^4.5.5",
-    "webpack": "^5.67.0",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.7.3"
-  },
-  "dependencies": {
-    "@stitches/core": "^1.2.6"
-  }
+	"name": "github-issue-vote",
+	"packageManager": "yarn@3.1.1",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "webpack && tsc --build --verbose",
+		"typecheck": "tsc --noEmit",
+		"lint": "eslint . --ext .js,.ts"
+	},
+	"devDependencies": {
+		"@swc/core": "^1.2.135",
+		"@typescript-eslint/eslint-plugin": "^5.0.0",
+		"@typescript-eslint/parser": "^5.0.0",
+		"eslint": "^8.8.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-airbnb-typescript": "^16.1.0",
+		"eslint-import-resolver-node": "^0.3.6",
+		"eslint-plugin-import": "^2.25.4",
+		"eslint-plugin-prettier": "^4.0.0",
+		"html-webpack-plugin": "^5.5.0",
+		"prettier": "^2.5.1",
+		"swc-loader": "^0.1.15",
+		"typescript": "^4.5.5",
+		"webpack": "^5.67.0",
+		"webpack-cli": "^4.9.2",
+		"webpack-dev-server": "^4.7.3"
+	},
+	"dependencies": {
+		"@stitches/core": "^1.2.6"
+	}
 }

@@ -1,5 +1,5 @@
-import { css } from "./stitches";
-import type { CSS } from "@stitches/core";
+import type { CSS } from '@stitches/core';
+import { css } from './stitches';
 
 interface CreateButtonParams {
   text: string;
@@ -10,26 +10,26 @@ export default function createButton({
   text,
   css: extraCss = {},
 }: CreateButtonParams) {
-  const buttonEl = document.createElement("button");
+  const buttonEl = document.createElement('button');
   const buttonCss = css(
     {
-      width: "54px",
-      height: "40px",
-      background: "$light3",
-      border: "none",
-      borderRadius: "10px",
-      fontSize: "14px",
-      "&:hover": {
-        background: "$light2",
+      width: '54px',
+      height: '40px',
+      background: '$light3',
+      border: 'none',
+      borderRadius: '10px',
+      fontSize: '14px',
+      '&:hover': {
+        background: '$light2',
       },
-      "&:focus": {
-        border: "1px solid $light1",
+      '&:focus': {
+        border: '1px solid $light1',
       },
-      "&:active": {
-        background: "$light0",
+      '&:active': {
+        background: '$light0',
       },
     },
-    extraCss
+    extraCss,
   );
   buttonEl.className = buttonCss();
   buttonEl.innerText = text;
