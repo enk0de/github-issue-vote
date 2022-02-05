@@ -121,6 +121,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@stitches/core", [
+        ["npm:1.2.6", {
+          "packageLocation": "./.yarn/cache/@stitches-core-npm-1.2.6-b820724f4f-558ce083c1.zip/node_modules/@stitches/core/",
+          "packageDependencies": [
+            ["@stitches/core", "npm:1.2.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@swc/core", [
         ["npm:1.2.135", {
           "packageLocation": "./.yarn/cache/@swc-core-npm-1.2.135-cf96b8ad88-5110d6c4f0.zip/node_modules/@swc/core/",
@@ -2276,6 +2285,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/library/",
           "packageDependencies": [
             ["github-issue-vote", "workspace:packages/library"],
+            ["@stitches/core", "npm:1.2.6"],
             ["@swc/core", "npm:1.2.135"],
             ["html-webpack-plugin", "virtual:63a1a59cece76481b2c67ddc5139867de52f089e9bf363eebaefbc6bd77198e39d16404ddd651ece02e9a7ac465eb76bddaae9420d382d31a7019f7db1caa9b7#npm:5.5.0"],
             ["swc-loader", "virtual:63a1a59cece76481b2c67ddc5139867de52f089e9bf363eebaefbc6bd77198e39d16404ddd651ece02e9a7ac465eb76bddaae9420d382d31a7019f7db1caa9b7#npm:0.1.15"],

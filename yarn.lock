@@ -66,6 +66,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@stitches/core@npm:^1.2.6":
+  version: 1.2.6
+  resolution: "@stitches/core@npm:1.2.6"
+  checksum: 558ce083c1e04f57025942d1821d3f2c6b6366c417d71959c51553747538e8945041e6befcf88c3b9e9ef07eefdabb36c301fbdde2f1d3833c992ca4049d8b1b
+  languageName: node
+  linkType: hard
+
 "@swc/core-android-arm-eabi@npm:1.2.135":
   version: 1.2.135
   resolution: "@swc/core-android-arm-eabi@npm:1.2.135"
@@ -1828,6 +1835,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "github-issue-vote@workspace:packages/library"
   dependencies:
+    "@stitches/core": ^1.2.6
     "@swc/core": ^1.2.135
     html-webpack-plugin: ^5.5.0
     swc-loader: ^0.1.15
