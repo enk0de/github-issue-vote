@@ -1,8 +1,9 @@
 import { createStitches } from "@stitches/core";
+import COLORS from "./colors";
 
 export const { css } = createStitches({
   theme: {
-    colors: { surface: "#EFF6FF", main: "#1E40AF" },
+    colors: COLORS,
     radii: { full: "99999px" },
     space: { normal: ".4em", extra: "1em" },
   },
