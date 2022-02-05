@@ -1,13 +1,25 @@
 import { css } from "./stitches";
+import type { CSS } from "@stitches/core";
 
-export default function createText(text: string) {
+interface CreateTextParams {
+  text: string;
+  css?: CSS;
+}
+
+export default function createText({
+  text,
+  css: extraCss = {},
+}: CreateTextParams) {
   const textEl = document.createElement("p");
-  const textCss = css({
-    fontSize: "14px",
-    lineHeight: "17px",
-    textAlign: "center",
-    color: "#8F90A6",
-  });
+  const textCss = css(
+    {
+      fontSize: "14px",
+      lineHeight: "17px",
+      textAlign: "center",
+      color: "#8F90A6",
+    },
+    extraCss
+  );
   textEl.className = textCss();
   textEl.innerText = text;
   return textEl;
