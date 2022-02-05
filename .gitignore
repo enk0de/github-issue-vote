@@ -10,3 +10,4 @@
 #/.pnp.*
 node_modules
 packages/library/tsconfig.tsbuildinfo
+packages/library/dist
