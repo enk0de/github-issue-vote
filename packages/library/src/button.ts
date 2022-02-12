@@ -19,6 +19,7 @@ export default function createButton({
       border: 'none',
       borderRadius: '10px',
       fontSize: '14px',
+      cursor: 'pointer',
       '&:hover': {
         background: '$light2',
       },
