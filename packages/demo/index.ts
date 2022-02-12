@@ -1,3 +1,8 @@
-import a from 'github-issue-vote';
+import Vote from 'github-issue-vote';
 
-document.body.appendChild(a({ issueId: 0, title: '테스트' }));
+const vote = new Vote({ config: {
+  owner: 'hoondeveloper',
+  repo: 'github-issue-vote',
+  issueNumber: 2
+}, title: 'ㅁㅔ로ㅇ' })
+document.body.appendChild(vote.getElement());
