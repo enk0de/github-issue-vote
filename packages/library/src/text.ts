@@ -10,7 +10,7 @@ export default function createText({
   text,
   css: extraCss = {},
 }: CreateTextParams) {
-  const textEl = document.createElement('p');
+  const textEl = document.createElement('h2');
   const textCss = css(
     {
       fontSize: '14px',
