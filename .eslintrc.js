@@ -13,6 +13,6 @@ module.exports = {
   parserOptions: {
     project: "./packages/*/tsconfig.json",
   },
-  ignorePatterns: ["**/dist/**", "**/webpack.config.js"],
+  ignorePatterns: ["**/dist/**", "**/webpack.config.js", "**/.eslintrc.js"],
 };
  
